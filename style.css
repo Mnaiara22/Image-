@@ -1,6 +1,13 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 */
 
+/*Colores
+
+#000000
+#353231
+#231e1c
+#687cef
+*/
 
 @font-face {
     font-family: 'octosquares'; /* Nombre de la fuente */
@@ -20,8 +27,8 @@
 }
 
 body{
-    font-family: 'octosquares';
-    background-color: #1e202d;
+    font-family: 'octosquares'!important;
+    background-color: #353231;
     color: #fff
 }
 
@@ -63,6 +70,8 @@ img{
     width: 150px;
 }
 
+
+
 .menu .navbar ul li{
     position: relative;
     float: left;
@@ -95,13 +104,24 @@ img{
 }
 
 header{
-    background-color: #687cef;
+    background-color: #000000;
 }
+
+.cont{
+    text-align: center;
+}
+
+.header-img{
+    width: 50vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 
 
 .header-txt{
     text-align: center;
-    padding: 0 150px;
+    padding: 0 100px;
 }
 
 .header-txt h1{
@@ -142,31 +162,36 @@ p{
     display: flex;
     justify-content: space-between;
     padding: 0 100px;
-    margin-top: 70px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .information-1{
     margin: 0 10px;
-    background: linear-gradient(
-        90deg,
-        rgba(84,105,210,1) 0%,
-        rgb(67, 72, 102)68%
-    );
+    background-color: #231e1c;
     padding: 15px;
     border-radius: 15px;
 }
 
 .information-1 h3{
-    color: #fdfeff;
-    font-size: 18px;
+    color: #fff;
+    font-size: 25px;
 }
 
 .information-1 p{
-    margin-bottom: 5px;
+    margin-bottom: 1px;
 }
 
 .information-1 a{
-    color: #fdfeff;
+    color: #fff;
+    text-decoration: none;
+}
+
+.present{
+    background-color: #231e1c;
+    padding: 50px;
+    margin-top: 50px;
+    
 }
 
 .linkedin:hover{
@@ -224,6 +249,10 @@ h3{
     font-size: 15px;
 }
 
+.nuestrosservicios{
+    color: #687cef;
+}
+
 .services{
     padding: 0 0 120px 0;
     text-align: center;
@@ -237,7 +266,7 @@ h3{
 }
 
 .services-1{
-    background-color: #1e202d;
+    background-color: #231e1c;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     padding: 35px;
     display: flex;
@@ -249,8 +278,8 @@ h3{
 .services-1:hover{
     background: linear-gradient(
         90deg,
-        rgba(37,118,250,1) 0%,
-        rgba(84,115,237,1) 100%
+        #687cef 0%,
+        #687cef 100%
     );
     cursor: pointer;
 }
@@ -312,7 +341,7 @@ h3{
 }
 
 .footer{
-    background-color: #151521;
+    background-color: #000000;
     padding: 50px 0;
 }
 
@@ -376,7 +405,7 @@ h3{
     }
 
     .header-txt{
-        padding: 0;
+        padding: 40;
     }
 
     .header-txt h1{
