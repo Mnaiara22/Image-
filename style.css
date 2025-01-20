@@ -45,7 +45,6 @@ p{
     margin-bottom: 35px;
 }
 
-
 h2{
     font-size: 40px;
     color: #fdfeff;
@@ -109,7 +108,6 @@ header nav div a img {
 
 .intro-txt{
     text-align: center;
-    padding: 0 100px;
 }
 
 .intro-txt h1{
@@ -130,16 +128,32 @@ header nav div a img {
 
 /*Presentacion*/
 
-.presentation{
+
+/*.presentation{
     display: flex;
     justify-content: space-between;
-    padding: 0 100px;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
 .presentation-1{
-    margin: 0 10px;
+    background-color: #231e1c;
+    padding: 15px;
+    border-radius: 15px;
+}
+*/
+
+
+.presentation{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.presentation-1{
     background-color: #231e1c;
     padding: 15px;
     border-radius: 15px;
@@ -178,7 +192,7 @@ header nav div a img {
 /*Nuestros Servicios*/
 
 .services{
-    padding: 0 0 120px 0;
+    margin-bottom: 30px;
     text-align: center;
 }
 
@@ -270,9 +284,8 @@ footer {
 
 
     .presentation{
-        margin-top: 0;
-        padding: 30px;
-        flex-direction: column;
+        margin-bottom: 30px;
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .presentation-1{
