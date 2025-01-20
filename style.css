@@ -7,7 +7,10 @@
 #353231
 #231e1c
 #687cef
+#fd006a  fuxia
 */
+
+/*General*/
 
 @font-face {
     font-family: 'octosquares'; /* Nombre de la fuente */
@@ -26,204 +29,20 @@
     list-style: none;
 }
 
+span{
+    color: #fd006a;
+}
+
 body{
     font-family: 'octosquares'!important;
     background-color: #353231;
     color: #fff
 }
 
-img{
-    max-width: 100%;
-}
-
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.header{
-    background-color: #12121c;
-    display: flex;
-    align-items: center;
-    min-height: 80vh;
-    padding: 80px 0;
-}
-
-.headerinfo{
-    background-color: #12121c;
-    display: flex;
-    align-items: center;
-   
-}
-
-.menu{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo{
-    width: 150px;
-}
-
-
-
-.menu .navbar ul li{
-    position: relative;
-    float: left;
-}
-
-.menu .navbar ul li a{
-    font-size: 18px;
-    padding: 20px;
-    color: #ffffff;
-    display: block;
-    font-weight: 600;
-}
-
-.menu .navbar ul li a:hover{
-    color: #687cef;
-}
-
-#menu{
-    display: none;
-}
-
-.menu-icono{
-    width: 25px;
-    display: none;
-}
-
-.menu .label{
-    cursor: pointer;
-    display: none;
-}
-
-header{
-    background-color: #000000;
-}
-
-.cont{
-    text-align: center;
-}
-
-.header-img{
-    width: 50vh;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-
-
-.header-txt{
-    text-align: center;
-    padding: 0 100px;
-}
-
-.header-txt h1{
-    font-size: 55px;
-    line-height: 1;
-    color: #fdfeff;
-    margin-bottom: 25px;
-}
-
-span{
-    color: #687cef;
-}
-
 p{
     font-size: 17px;
     color: #d2d2d2;
     margin-bottom: 35px;
-}
-
-.butons{
-    display: flex;
-    justify-content: center;
-}
-
-.btn-1{
-    display: inline-block;
-    padding: 11px 35px;
-    background: linear-gradient(
-        90deg,
-        rgba(37,118,250,1) 0%,
-        rgba(84,115,237,1) 100%
-    );
-    color: #fdfeff;
-    margin: 0 15px;
-}
-
-.information{
-    display: flex;
-    justify-content: space-between;
-    padding: 0 100px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.information-1{
-    margin: 0 10px;
-    background-color: #231e1c;
-    padding: 15px;
-    border-radius: 15px;
-}
-
-.information-1 h3{
-    color: #fff;
-    font-size: 25px;
-}
-
-.information-1 p{
-    margin-bottom: 1px;
-}
-
-.information-1 a{
-    color: #fff;
-    text-decoration: none;
-}
-
-.present{
-    background-color: #231e1c;
-    padding: 50px;
-    margin-top: 50px;
-    
-}
-
-.linkedin:hover{
-    cursor: pointer;
-    background: linear-gradient(
-        90deg,
-        rgba(37,118,250,1) 0%,
-        rgba(84,115,237,1) 100%
-    );
-}
-
-.about{
-    padding: 120px 0;
-    display: flex;
-    align-items: center;
-}
-
-.about-img{
-    flex-basis: 50%;
-}
-
-.about-img img{
-    width: 500px;
-    border-radius: 15px;
-}
-
-.about-txt{
-    flex-basis: 50%;
-}
-
-.about-txtinfo{
-    flex-basis: 80%;
 }
 
 h2{
@@ -240,18 +59,122 @@ h3{
     margin-bottom: 15px;
 }
 
-.about-txt a{
-    margin: 0;
+img{
+    max-width: 100%;
 }
 
-.intro{
-    color: #687cef;
-    font-size: 15px;
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.nuestrosservicios{
-    color: #687cef;
+/*Header*/
+
+header{
+    background-color: #000000;
 }
+
+header nav div div ul li {
+    font-size: 20px;
+    margin-right: 20px;
+    margin-left: 30px;
+}
+
+
+.nav-hover:hover {
+    transform: scale(1.1);
+    transition: all 1s;
+
+}
+
+header nav div a img {
+    width: 70px;
+}
+
+/*Fin de Header*/
+
+
+/*Introduccion*/
+
+.cont{
+    text-align: center;
+}
+
+.intro-img{
+    width: 50vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.intro-txt{
+    text-align: center;
+    padding: 0 100px;
+}
+
+.intro-txt h1{
+    font-size: 55px;
+    line-height: 1;
+    color: #fdfeff;
+    margin-bottom: 25px;
+}
+
+.present{
+    background-color: #231e1c;
+    padding: 50px;
+    margin-top: 50px; 
+}
+
+/*Fin de Introduccion*/
+
+
+/*Presentacion*/
+
+.presentation{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.presentation-1{
+    margin: 0 10px;
+    background-color: #231e1c;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.presentation-1 h3{
+    color: #fff;
+    font-size: 25px;
+}
+
+.presentation-1 p{
+    margin-bottom: 1px;
+}
+
+.presentation-1 a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.presentation-img{
+    width: 50vh;
+}
+
+.linkedin:hover{
+    cursor: pointer;
+    background: linear-gradient(
+        90deg,
+        rgba(37,118,250,1) 0%,
+        rgba(84,115,237,1) 100%
+    );
+}
+
+/*Fin de Presentacion*/
+
+
+/*Nuestros Servicios*/
 
 .services{
     padding: 0 0 120px 0;
@@ -278,8 +201,8 @@ h3{
 .services-1:hover{
     background: linear-gradient(
         90deg,
-        #687cef 0%,
-        #687cef 100%
+        #fd006a 0%,
+        #fd006a 100%
     );
     cursor: pointer;
 }
@@ -294,155 +217,67 @@ h3{
     margin-bottom: 15px;
 }
 
-.price{
-    padding: 0 0 120px 0;
-    text-align: center;
+/*Fin de Nuestros Servicios*/
+
+
+/*Footer*/
+
+footer {
+    background-color: #000000;  
 }
 
-.price-content{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 45px;
-}
+  footer div a img {
+    width: 200px;
+  }
 
-.price-1{
-    flex-basis: calc(33,3% - 20px);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    padding: 40px;
-    border-radius: 15px;
-}
+  footer div div a img {
+    width: 50px;
+    margin: 20px;
+  }
+  footer div div a img:hover {
+    transform: scale(1.3);
+    transition: all 1s;
+  }
+  footer div p {
+    color: #FFFFFF;
+  }
+  footer div .home {
+    width: 80px;
+    position: fixed;
+    bottom: 80px;
+    right: 80px;
+    border-radius: 100px;
+  }
+  @media screen and (max-width: 970px) {
+    footer div .home {
+      display: none;
+    }
+  }
+  
 
-.pack{
-    color: #fdfeff;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.price-1 h3{
-    color: #fdfeff;
-    font-size: 70px;
-}
-
-.bg-pack{
-    background: linear-gradient(
-        90deg,
-        rgba(37,118,250,1) 0%,
-        rgba(84,115,237,1) 100%
-    );
-}
-
-.pack-center{
-    color: #fdfeff;
-}
-
-.price-1 li{
-    color: #fdfeff;
-    margin-bottom: 15px;
-}
-
-.footer{
-    background-color: #000000;
-    padding: 50px 0;
-}
-
-.footer-content{
-    display: flex;
-    justify-content: space-between;
-}
-
-.link h3{
-    color: #fdfeff;
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.link a{
-    color: #d2d2d2;
-    display: block;
-    font-size: 17px;
-    margin-bottom: 10px;
-}
-
-.link a:hover{
-    color: #687cef;
-}
+/*Fin de Footer*/
 
 
 @media(max-width:991px){
     
-    .menu{
-        padding: 20px;
-    }
 
-    .menu label{
-        display: initial;
-    }
-
-    .menu .navbar{
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: #687cef;
-        display: none;
-    }
-
-    .menu .navbar ul li a:hover{
-        color: #151521;
-    }
-
-    .menu .navbar ul li{
-        width: 100%;
-    }
-
-    #menu:checked ~ .navbar{
-        display: initial;
-    }
 
     .header{
         min-height: 0vh;
         padding: 80px 30px 50px 30px;
     }
 
-    .header-txt{
-        padding: 40;
-    }
 
-    .header-txt h1{
-        font-size: 45px;
-    }
-
-    .butons{
-        flex-direction: column;
-        padding: 0 50px;
-    }
-
-    .btn-1{
-        margin: 0 0 20px 0;
-    }
-
-    .information{
+    .presentation{
         margin-top: 0;
         padding: 30px;
         flex-direction: column;
     }
 
-    .information-1{
+    .presentation-1{
         margin:  0 0 20px 0;
-    }
-
-    .about{
-        padding: 0 30px 30px 30px;
-        flex-direction: column;
-    }
-
-    .about-txt{
+                flex-direction: column;
         text-align: center;
-        margin-bottom: 30px;
-    }
-
-    .about-img{
-        order: 1;
     }
 
     .services{
@@ -454,18 +289,7 @@ h3{
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .price{
-        padding: 30px;
-    }
-
-    .price-content{
-        flex-direction: column;
-    }
-
-    .price-1{
-        margin-bottom: 30px;
-    }
-
+    
     .footer{
         padding: 30px;
     }
@@ -478,7 +302,5 @@ h3{
     .link{
         margin-bottom: 10px;
     }
-
-    
 
 }
