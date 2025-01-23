@@ -54,7 +54,7 @@
 
   
               <li class="nav-item">
-                <a class="nav-link text-white nav-hover" href="#">Contacto</a>
+                <a class="nav-link text-white nav-hover" href="../index.html">Contacto</a>
               </li>
   
             </ul>
@@ -78,7 +78,31 @@
 
   <!-- Fin de Header -->
 
-
+<section class="contact">
+    <div class="contact-form-container">
+      <h2>Contacto</h2>
+      <form action="enviarFormulario.php" method="POST" class="contact-form">
+        <div class="form-group">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Número de teléfono</label>
+          <input type="tel" id="phone" name="phone"  placeholder="Ej: +54-1234-5678" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+  
 
 
 <!-- Inicio de Footer -->
