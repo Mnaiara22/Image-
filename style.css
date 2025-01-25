@@ -53,7 +53,6 @@ h3{
     font-size: 30px;
     color: #fdfeff;
     line-height: 1.4;
-    margin-bottom: 15px;
 }
 
 img{
@@ -89,6 +88,9 @@ header nav div a img {
     width: 70px;
 }
 
+.dropdown-menu{
+  padding: 10px;
+}
 
 
 /*Fin de Header*/
@@ -143,7 +145,10 @@ header nav div a img {
 }
 */
 
-
+.presentation-1{
+  background-color: #231e1c;
+  padding: 15px;
+  border-radius: 15px;}
 
 
 
@@ -187,7 +192,7 @@ header nav div a img {
 }
 
 .presentation-1 p{
-    margin-bottom: 1px;
+    margin-bottom: 10px;
 }
 
 .presentation-1 a{
