@@ -148,7 +148,9 @@ header nav div a img {
 .presentation-1{
   background-color: #231e1c;
   padding: 15px;
-  border-radius: 15px;}
+  border-radius: 15px;
+  text-align: center;
+}
 
 
 
@@ -193,6 +195,7 @@ header nav div a img {
 
 .presentation-1 p{
     margin-bottom: 10px;
+    margin-top: -10px;
 }
 
 .presentation-1 a{
