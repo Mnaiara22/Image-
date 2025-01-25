@@ -93,6 +93,7 @@ header nav div a img {
 }
 
 
+
 /*Fin de Header*/
 
 
@@ -240,7 +241,7 @@ header nav div a img {
 }
 
 .services-1 img{
-    width: 30px;
+    width: 60px;
     margin-bottom: 10px;
 }
 
@@ -413,6 +414,7 @@ footer {
     transition: background-color 0.3s;
   }
   
+
   button:hover {
     background-color: #fd006a;
   }
