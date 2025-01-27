@@ -1,5 +1,4 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
-*/
+
 
 /*Colores
 
@@ -14,10 +13,15 @@
 
 @font-face {
   font-family:'Octosquares';
-  src: url(font/TT\ Octosquares\ Trial\ Black.ttf);
+  src: url(font/TT\ Octosquares\ Trial\ ExtraLight.ttf);
   font-style: normal;
 }
 
+@font-face {
+  font-family:'OctosquaresTitle';
+  src: url(font/TT\ Octosquares\ Trial\ DemiBold.ttf);
+  font-style: normal;
+}
 
 *{
     margin: 0;
@@ -34,9 +38,12 @@ span{
 
 body{
   font-family: 'Octosquares';
-    /*font-family: 'Space Mono', monospace;*/
-    background-color: #353231;
-    color: #fff
+  background-color: #353231;
+  color: #fff
+}
+
+.title{
+  font-family: 'OctosquaresTitle';
 }
 
 p{
