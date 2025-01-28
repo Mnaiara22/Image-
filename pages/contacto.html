@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,12 @@
     <link rel="stylesheet" href="../style.css">
     <title>IMAGE-</title>
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
-</head>
+  </head>
 
-<body>
+
+  <body>
     
-    <!-- Inicio del Header -->
+    <!-- INICIO HEADER -->
 
     <header class="sticky-top title">
 
@@ -32,7 +34,6 @@
                 <a class="nav-link text-white nav-hover" href="quienessomos.html">Quienes somos</a>
               </li>
   
-
               <li class="nav-item">
                 <a class="nav-link text-white nav-hover" href="servicios.html">Servicios</a>
               </li>
@@ -42,17 +43,28 @@
                   <span class="visually-hidden text-white">Toggle Dropdown</span>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                
-                    <li><a class="dropdown-item text-black nav-hover" href="servicios.html#charlasmotivacionales">Charlas Motivacionales</a></li>
-                    <li><a class="dropdown-item text-black nav-hover" href="servicios.html#clinicasdeportivas">Clínicas deportivas</a></li>
-                    <li><a class="dropdown-item text-black nav-hover" href="servicios.html#streamingdeeventos">Streaming de Eventos</a></li>
-                    <li><a class="dropdown-item text-black nav-hover" href="servicios.html#produccionaudiovisual">Producción Audiovisual</a></li>
-                    <li><a class="dropdown-item text-black nav-hover" href="servicios.html#prensaycomunicacion">Prensa y Comunicación</a></li>
-                    <li><a class="dropdown-item text-black nav-hover" href="servicios.html#otroservicio">otroservicio</a></li>
-                  </ul>
+                  <li>
+                    <a class="dropdown-item text-black nav-hover" href="servicios.html#charlasmotivacionales">Charlas Motivacionales</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-black nav-hover" href="servicios.html#clinicasdeportivas">Clínicas deportivas</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-black nav-hover" href="servicios.html#streamingdeeventos">Streaming de Eventos</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-black nav-hover" href="servicios.html#produccionaudiovisual">Producción Audiovisual</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-black nav-hover" href="servicios.html#prensaycomunicacion">Prensa y Comunicación</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-black nav-hover" href="servicios.html#otroservicio">otroservicio</a>
+                  </li>
+                </ul>
+
               </div>
 
-  
               <li class="nav-item">
                 <a class="nav-link text-white nav-hover" href="../index.html">Contacto</a>
               </li>
@@ -74,77 +86,78 @@
   
       </nav>
   
-  </header>
+    </header>
 
-  <!-- Fin de Header -->
+    <!-- FIN HEADER -->
 
-<section class="contact">
-    <div class="contact-form-container">
-      <h2 class="title">Contacto</h2>
-      <form action="enviarFormulario.php" method="POST" class="contact-form">
-        <div class="form-group">
-          <label for="name">Nombre</label>
-          <input type="text" id="name" name="name" required>
+    <main>
+
+      <!-- INICIO CONTACTO -->
+
+      <section class="contact">
+        <div class="contact-form-container">
+
+          <h2 class="title">Contacto</h2>
+          <form action="enviarFormulario.php" method="POST" class="contact-form">
+            <div class="form-group">
+              <label for="name">Nombre</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Número de teléfono</label>
+              <input type="tel" id="phone" name="phone"  placeholder="Ej: +54-1234-5678" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Mensaje</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="title">Enviar</button>
+          </form>
+
         </div>
-        <div class="form-group">
-          <label for="email">Correo electrónico</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-          <label for="phone">Número de teléfono</label>
-          <input type="tel" id="phone" name="phone"  placeholder="Ej: +54-1234-5678" required>
-        </div>
-        <div class="form-group">
-          <label for="message">Mensaje</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
-        <button type="submit" class="title">Enviar</button>
-      </form>
-    </div>
-  </section>
-  
+      </section>
 
+      <!-- FIN CONTACTO -->
 
-<!-- Inicio de Footer -->
+    </main>
 
+    <!-- INICIO FOOTER -->
 
-<footer>
+    <footer>
+      <div class="container">
 
-  <div class="container">
-    <a href="#" class="d-flex justify-content-center">
-      <img src="../images/IMAGE- b and w 02.png" alt="Logo IMAGE-" class="row">
-    </a>
-
-    <div class="d-flex flex-sm-col justify-content-center">
-
-
-      <a href="https://www.instagram.com/image_agenciaystream?igsh=ZmtseXllOWJpbXE0&utm_source=qr" target="_blank">
-        <img src="../images/instagram.png" alt="Logo de Instagram">
-      </a>
-
-      <a href="https://www.linkedin.com/company/agencia-image/" target="_blank">
-        <img src="../images/linkedin.png" alt="Logo de Youtube">
-      </a>
-
-      <a href="" target="_blank">
-          <img src="../images/youtube.png" alt="Logo de Youtube">
+        <a href="#" class="d-flex justify-content-center">
+          <img src="../images/IMAGE- b and w 02.png" alt="Logo IMAGE-" class="row">
         </a>
-    </div>
 
+        <div class="d-flex flex-sm-col justify-content-center">
+          <a href="https://www.instagram.com/image_agenciaystream?igsh=ZmtseXllOWJpbXE0&utm_source=qr" target="_blank">
+            <img src="../images/instagram.png" alt="Logo de Instagram">
+          </a>
 
+          <a href="https://www.linkedin.com/company/agencia-image/" target="_blank">
+            <img src="../images/linkedin.png" alt="Logo de Youtube">
+          </a>
 
- 
-    <a href="#">
-      <img src="../images/flecha.png" alt="Home" class="home">
-    </a>
+          <a href="" target="_blank">
+            <img src="../images/youtube.png" alt="Logo de Youtube">
+          </a>
+        </div>
 
-  </div>
-</footer>
+        <a href="#">
+          <img src="../images/flecha.png" alt="Home" class="home">
+        </a>
 
+      </div>
+    </footer>
 
-<!-- Fin de Footer -->
+    <!-- FIN FOOTER -->
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-</body>
+  </body>
 </html>
