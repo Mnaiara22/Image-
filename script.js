@@ -5,3 +5,4 @@ document.addEventListener('copy', function(e) {
         console.log("Texto copiado: ", selectedText);
     }
 });
+
