@@ -1,13 +1,13 @@
-/*Colores
+/*COLORES
 
-#000000
-#353231
-#231e1c
-#687cef
-#fd006a  fuxia
+#000000 - negro
+#353231 - gris 
+#231e1c - gris oscuro
+#fd006a - fuxia
 */
 
-/*General*/
+
+/*GENERAL*/
 
 @font-face {
   font-family:'Octosquares';
@@ -22,23 +22,21 @@
 }
 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
 span{
-    color: #fd006a;
+  color: #fd006a;
 }
-
 
 body{
   font-family: 'Octosquares';
   background-color: #353231;
   color: #fff
-  
 }
 
 .title{
@@ -46,123 +44,300 @@ body{
 }
 
 p{
-    font-size: 17px;
-    color: #d2d2d2;
-    margin-bottom: 35px;
+  font-size: 17px;
+  color: #d2d2d2;
+  margin-bottom: 35px;
 }
 
 h2{
-    font-size: 40px;
-    color: #fd006a;
-    line-height: 1.4;
-    margin-bottom: 15px;
+  font-size: 40px;
+  color: #fd006a;
+  line-height: 1.4;
+  margin-bottom: 15px;
 }
 
 h3{
-    font-size: 30px;
-    color: #fdfeff;
-    line-height: 1.4;
+  font-size: 30px;
+  color: #fdfeff;
+  line-height: 1.4;
 }
 
 img{
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .container{
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/*Header*/
+iframe {
+  width: 100%;
+}
+
+button {
+  padding: 12px;
+  background-color: #fd00698a;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #fd006a;
+}
+
+::selection {
+  background-color: #fd006a; /* Color de fondo del texto seleccionado */
+  color: white; /* Color del texto seleccionado */
+}
+
+/*FIN GENERAL*/
+
+
+/*HEADER*/
 
 header{
-    background-color: #000000;
+  background-color: #000000;
 }
 
 header nav div div ul li {
-    font-size: 20px;
-    margin-right: 20px;
-    margin-left: 30px;
+  font-size: 20px;
+  margin-right: 20px;
+  margin-left: 30px;
 }
 
 .servicios-responsive{
-    display: none;
+  display: none;
 }
+
 .nav-hover:hover {
-    transform: scale(1.1);
-    transition: all 1s;
+  transform: scale(1.1);
+  transition: all 1s;
 }
 
 header nav div a img {
-    width: 70px;
+  width: 70px;
 }
 
 .dropdown-menu{
   padding: 10px;
 }
 
+/*FIN HEADER*/
 
 
-/*Fin de Header*/
+/*FOOTER*/
+
+footer {
+  background-color: #000000;  
+}
+
+footer div a img {
+  width: 200px;
+}
+
+footer div div a img {
+  width: 50px;
+  margin: 20px;
+}
+
+footer div div a img:hover {
+  transform: scale(1.3);
+  transition: all 1s;
+}
+
+footer div p {
+  color: #FFFFFF;
+}
+
+footer div .home {
+  width: 80px;
+  position: fixed;
+  bottom: 80px;
+  right: 80px;
+  border-radius: 100px;
+}
+
+@media screen and (max-width: 970px) {
+  footer div .home {
+    display: none;
+  }
+}
+
+/*FIN FOOTER*/
 
 
-/*Introduccion*/
+/*INTRODUCCION*/
 
-.cont{
-    text-align: center;
+.intro-container{
+  text-align: center;
 }
 
 .intro-img{
-    width: 50vh;
-    padding-bottom: 50px;
+  width: 50vh;
+  padding-bottom: 50px;
 }
 
 .intro-txt{
-    text-align: center;
-    font-size: 30px;
+  text-align: center;
+  font-size: 30px;
 }
 
 .intro-txt h1{
-    font-size: 55px;
-    line-height: 1;
-    color: #fdfeff;
-    margin-bottom: 25px;
+  font-size: 55px;
+  line-height: 1;
+  color: #fdfeff;
+  margin-bottom: 25px;
 }
 
-.present{
-    background-color: #231e1c;
-    padding: 50px;
-    margin-top: 50px; 
-    border-radius: 15px;
+.intro{
+  background-color: #231e1c;
+  padding: 50px;
+  margin-top: 50px; 
+  border-radius: 15px;
 }
 
-/*Fin de Introduccion*/
+/*FIN INTRODUCCION*/
 
 
-/*Presentacion*/
+/*PRESENTACION*/
 
-
-/*.presentation{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-    margin-bottom: 50px;
+.presentation{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-.presentation-1{
-    background-color: #231e1c;
-    padding: 15px;
-    border-radius: 15px;
-}
-*/
-
-.presentation-1{
+.present-container{
   background-color: #231e1c;
   padding: 15px;
   border-radius: 15px;
   text-align: center;
 }
 
+.present-container h3{
+  color: #fff;
+  font-size: 25px;
+}
+
+.present-container p{
+  margin-bottom: 20px;
+  margin-top: -10px;
+}
+
+.present-container a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.presentation-img{
+  width: 50vh;
+}
+
+.linkedin:hover{
+  cursor: pointer;
+  background: linear-gradient(
+      90deg,
+      #fd006a 0%,
+      #fd006a 100%
+  );
+}
+
+/*FIN PRESENTACION*/
+
+
+/*VIDEOS PRESENTACION*/
+
+.presentation-videos{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.videos-container{
+  background-color: #231e1c;
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+/*FIN VIDEOS PRESENTACION*/
+
+
+/*INDEX SEVICIOS*/
+
+.services{
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.services-container{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.services-1{
+  background-color: #231e1c;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.services-1:hover{
+  background: linear-gradient(
+    90deg,
+    #fd006a 0%,
+    #fd006a 100%);
+  cursor: pointer;
+}
+
+.services-1 img{
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.services-1 h3{
+  color: #fdfeff;
+  margin-bottom: 15px;
+}
+
+.servicios{
+  background-color: #231e1c;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+/*FIN INDEX SEVICIOS*/
+
+
+/*QUIENES SOMOS*/
+
+.info-quienessomos{
+  text-align: center;
+  margin-top: 50px;
+}
+
+/*FIN QUIENES SOMOS*/
+
+
+/*CONFERENCIANTES*/
 
 .conferen{
   display: grid;
@@ -184,328 +359,147 @@ header nav div a img {
   margin-top: 20px;
 }
 
+/*FIN CONFERENCIANTES*/
+
+
+/*CONTACTO*/
+ 
+.contact {
+  background-color: #353231;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.contact-form-container {
+  background-color: #231e1c;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  margin: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  font-size: 16px;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
 
 .success-message {
   display: none;
   color: #fd006a;
   margin-top: 20px;
 }
+
 .error-message {
   display: none;
   color: #fd006a;
   margin-top: 20px;
 }
 
+/*FIN CONTACTO*/
 
 
-
-
-iframe {
-  width: 100%;
-}
-
-
-
-
-
-
-
-.presentation-videos{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.presentation{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.presentation-1{
-    background-color: #231e1c;
-    padding: 15px;
-    border-radius: 15px;
-}
-
-.presentation-1 h3{
-    color: #fff;
-    font-size: 25px;
-}
-
-.presentation-1 p{
-    margin-bottom: 20px;
-    margin-top: -10px;
-}
-
-.presentation-1 a{
-    color: #fff;
-    text-decoration: none;
-}
-
-.presentation-img{
-    width: 50vh;
-}
-
-.linkedin:hover{
-    cursor: pointer;
-    background: linear-gradient(
-        90deg,
-        #fd006a 0%,
-        #fd006a 100%
-    );
-}
-
-/*Fin de Presentacion*/
-
-
-/*Nuestros Servicios*/
-
-.services{
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-.services-content{
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px
-    ;
-}
-
-.services-1{
-    background-color: #231e1c;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    padding: 35px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    
-}
-
-.services-1:hover{
-    background: linear-gradient(
-        90deg,
-        #fd006a 0%,
-        #fd006a 100%
-    );
-    cursor: pointer;
-}
-
-.services-1 img{
-    width: 60px;
-    margin-bottom: 10px;
-}
-
-.services-1 h3{
-    color: #fdfeff;
-    margin-bottom: 15px;
-}
-
-.servicios{
-  background-color: #231e1c;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    max-width: 1200px;
-    margin: 30px auto;
-}
-/*Fin de Nuestros Servicios*/
-
-
-/*Footer*/
-
-footer {
-    background-color: #000000;  
-}
-
-  footer div a img {
-    width: 200px;
-  }
-
-  footer div div a img {
-    width: 50px;
-    margin: 20px;
-  }
-  footer div div a img:hover {
-    transform: scale(1.3);
-    transition: all 1s;
-  }
-  footer div p {
-    color: #FFFFFF;
-  }
-  footer div .home {
-    width: 80px;
-    position: fixed;
-    bottom: 80px;
-    right: 80px;
-    border-radius: 100px;
-  }
-
-
-  @media screen and (max-width: 970px) {
-    footer div .home {
-      display: none;
-    }
-  }
-  
-
-/*Fin de Footer*/
-
+/*RESPONSIVE*/
 
 @media(max-width:991px){
     
-.btn-group{
+  .btn-group{
     display: none;
-}
-
-
-    .header{
-        min-height: 0vh;
-        padding: 80px 30px 50px 30px;
-    }
-
-
-    .presentation{
-        margin-bottom: 30px;
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .presentation-1{
-        margin:  0 0 20px 0;
-                flex-direction: column;
-        text-align: center;
-    }
-
-    .services{
-        padding: 0 30px 30px 30px;
-    }
-
-    .services-content{
-        margin-bottom: 30px;
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    
-    .footer{
-        padding: 30px;
-    }
-
-    .footer-content{
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .link{
-        margin-bottom: 10px;
-    }
-
-
-}
-
-
-
-.info-quienessomos{
-    text-align: center;
-    margin-top: 50px;
-}
-
-/*Contacto*/
-
-  
-.contact {
-    background-color: #353231;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
   }
-  
-  .contact-form-container {
 
-    background-color: #231e1c;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 500px;
-    margin: 20px;
+  .header{
+    min-height: 0vh;
+    padding: 80px 30px 50px 30px;
   }
-  
-  h2 {
-    text-align: center;
-    margin-bottom: 20px;
+
+  .presentation{
+    margin-bottom: 30px;
+    grid-template-columns: repeat(1, 1fr);
   }
-  
-  .contact-form {
-    display: flex;
+
+  .present-container{
+    margin:  0 0 20px 0;
     flex-direction: column;
+    text-align: center;
   }
+
   
-  .form-group {
-    margin-bottom: 15px;
+  .presentation-videos{
+    margin-bottom: 30px;
+    grid-template-columns: repeat(1, 1fr);
   }
-  
-  .form-group label {
-    font-size: 14px;
-    margin-bottom: 5px;
+
+  .services-container{
+    margin-bottom: 30px;
+    grid-template-columns: repeat(1, 1fr);
   }
-  
+
+  .conferen{
+    margin-bottom: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    margin:  0 0 20px 0;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .services{
+    padding: 0 30px 30px 30px;
+  }
+
+  .footer{
+    padding: 30px;
+  }
+
+  .footer-content{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .link{
+    margin-bottom: 10px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .contact-form-container {
+    padding: 20px;
+  }
+
   .form-group input, .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 15px;
-    font-size: 16px;
-  }
-  
-  .form-group textarea {
-    resize: vertical;
+    font-size: 14px;
   }
   
   button {
-    padding: 12px;
-    background-color: #fd00698a;
-    color: white;
-    border: none;
-    border-radius: 15px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    font-size: 14px;
   }
-  
-
-  button:hover {
-    background-color: #fd006a;
-  }
-  
-  /* Estilos para pantallas pequeñas */
-  @media (max-width: 768px) {
-    .contact-form-container {
-      padding: 20px;
-    }
-  
-  
-    .form-group input, .form-group textarea {
-      font-size: 14px;
-    }
-  
-    button {
-      font-size: 14px;
-    }
-  }
-  
-  /*script*/
-  ::selection {
-    background-color: #fd006a; /* Color de fondo del texto seleccionado */
-    color: white; /* Color del texto seleccionado */
 }
