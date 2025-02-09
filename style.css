@@ -168,7 +168,6 @@ header nav div a img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-
   margin-top: 50px;
   margin-bottom: 30px;
 }
