@@ -164,7 +164,26 @@ header nav div a img {
 }
 
 
+.conferen{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.conferenciantes{
+  background-color: #353231;
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.conferenciantes p{
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
 
 
 .success-message {
