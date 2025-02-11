@@ -36,7 +36,8 @@ span{
 body{
   font-family: 'Octosquares';
   background-color: #353231;
-  color: #fff
+  color: #fff;
+  overflow-x: hidden;
 }
 
 .title{
@@ -339,12 +340,28 @@ footer div .home {
 
 /*CONFERENCIANTES*/
 
+.presentation-conf{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/*  display: grid;
+  grid-template-columns: repeat(3, 1fr);*/
+
 .conferen{
+  text-align: center;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
+  max-width: 100%; /* Asegura que no se desborde */
+  padding: 10px;
   gap: 30px;
   margin-top: 50px;
   margin-bottom: 30px;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .conferenciantes{
@@ -452,7 +469,6 @@ h2 {
     text-align: center;
   }
 
-  
   .presentation-videos{
     margin-bottom: 30px;
     grid-template-columns: repeat(1, 1fr);
@@ -463,13 +479,13 @@ h2 {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .conferen{
+  /*.conferen{
     margin-bottom: 30px;
     grid-template-columns: repeat(2, 1fr);
     margin:  0 0 20px 0;
     flex-direction: column;
     text-align: center;
-  }
+  }*/
 
   .services{
     padding: 0 30px 30px 30px;
@@ -501,5 +517,15 @@ h2 {
   
   button {
     font-size: 14px;
+  }
+
+  .conferen {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  }
+}
+
+@media (max-width: 480px) {
+  .conferen {
+    grid-template-columns: 1fr; /* 1 columna */
   }
 }
