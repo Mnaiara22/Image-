@@ -96,6 +96,7 @@ button:hover {
   color: white; /* Color del texto seleccionado */
 }
 
+
 /*FIN GENERAL*/
 
 
@@ -167,6 +168,33 @@ footer div .home {
   footer div .home {
     display: none;
   }
+}
+
+.developer{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.developer-link{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.developer-link:hover{
+  cursor: pointer;
+  background: linear-gradient(
+      90deg,
+      #fd006a 0%,
+      #fd006a 100%
+  );
+
+}
+
+.micana{
+  width: 50px;
 }
 
 /*FIN FOOTER*/
