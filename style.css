@@ -183,18 +183,9 @@ footer div .home {
   color: #FFFFFF;
 }
 
-.developer-link:hover{
-  cursor: pointer;
-  background: linear-gradient(
-      90deg,
-      #fd006a 0%,
-      #fd006a 100%
-  );
-
-}
 
 .micana{
-  width: 50px;
+  width: 150px;
 }
 
 /*FIN FOOTER*/
